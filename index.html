@@ -11,13 +11,20 @@
             --dark: #0f172a;
             --gray: #64748b;
         }
-        * { margin:0; padding:0; box-sizing:border-box; }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             font-family: 'Segoe UI', system-ui, sans-serif;
             line-height: 1.6;
             color: #333;
             background: #f8fafc;
         }
+
         .container {
             max-width: 1100px;
             margin: 0 auto;
@@ -27,33 +34,40 @@
         /* Header */
         header {
             background: white;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
             position: sticky;
             top: 0;
             z-index: 100;
         }
+
         nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 0.75rem 0;
         }
+
         .logo {
             font-size: 1.8rem;
             font-weight: 700;
             color: var(--primary);
             text-decoration: none;
         }
+
         .logo > img {
             max-width: 120px;
         }
+
         .nav-links a {
             margin-left: 2rem;
             text-decoration: none;
             color: #475569;
             font-weight: 500;
         }
-        .nav-links a:hover { color: var(--primary); }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
 
         /* Hero */
         .hero {
@@ -62,17 +76,20 @@
             padding: 120px 0 100px;
             text-align: center;
         }
+
         .hero h1 {
             font-size: 2.5rem;
             margin-bottom: 1rem;
             line-height: 1.5;
         }
+
         .hero p {
             font-size: 1.35rem;
             max-width: 680px;
             margin: 0 auto 2rem;
             opacity: 0.9;
         }
+
         .btn {
             display: inline-block;
             padding: 14px 32px;
@@ -82,19 +99,23 @@
             text-decoration: none;
             transition: all 0.3s;
         }
+
         .btn-primary {
             background: var(--primary);
             color: white;
         }
+
         .btn-primary:hover {
             background: #0055aa;
             transform: translateY(-3px);
         }
+
         .btn-outline {
-            border: 2px solid rgba(255,255,255,0.7);
+            border: 2px solid rgba(255, 255, 255, 0.7);
             color: white;
             margin-left: 12px;
         }
+
         .btn-outline:hover {
             background: white;
             color: var(--dark);
@@ -104,31 +125,37 @@
         section {
             padding: 90px 0;
         }
+
         h2 {
             font-size: 2.4rem;
             text-align: center;
             margin-bottom: 3rem;
             color: var(--dark);
         }
+
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 2.5rem;
         }
+
         .card {
             background: white;
             border-radius: 12px;
             padding: 2.5rem;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
             transition: transform 0.3s;
         }
+
         .card:hover {
             transform: translateY(-10px);
         }
+
         .card h3 {
             margin: 1.2rem 0 0.8rem;
             color: var(--dark);
         }
+
         .card p {
             padding: 4px 0;
         }
@@ -136,7 +163,7 @@
         .card img {
             width: 100%;
         }
-        
+
         /* Footer */
         footer {
             background: var(--dark);
@@ -144,11 +171,17 @@
             padding: 80px 0 30px;
             text-align: center;
         }
+
+        .footer-links {
+            padding: 8px 0;
+        }
+
         .footer-links a {
             color: #cbd5e1;
             margin: 4px 12px;
             text-decoration: none;
         }
+
         .footer-links a:hover {
             color: white;
         }
@@ -156,163 +189,165 @@
 </head>
 <body>
 
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <nav>
-                <a href="#" class="logo"><img src="logo2.png" alt="Skyiah"></a>
-                <div class="nav-links">
-                    <a href="#products">PRODUCTS</a>
-                    <a href="#solutions">SOLUTIONS</a>
-                    <a href="#about">ABOUT</a>
-                    <a href="#partnership">PARTNERSHIP</a>
-                </div>
-            </nav>
-        </div>
-    </header>
+<!-- Header -->
+<header>
+    <div class="container">
+        <nav>
+            <a href="#" class="logo"><img src="logo2.png" alt="Skyiah"></a>
+            <div class="nav-links">
+                <a href="#products">PRODUCTS</a>
+                <a href="#solutions">SOLUTIONS</a>
+                <a href="#about">ABOUT</a>
+                <a href="#partnership">PARTNERSHIP</a>
+            </div>
+        </nav>
+    </div>
+</header>
 
-    <!-- Hero -->
-    <section class="hero">
-        <div class="container">
-            <h1>Efficient healthy tech<br>for CEA / healthcare automation</h1>
-            <p>a lightweight (better) alternative to classical industrial stacks, purpose-built for agri-and-care sectors</p>
-            <div>
-                <a href="#partnership" class="btn btn-primary">Contact Us</a>
-                <a href="#solutions" class="btn btn-outline">Explore Solutions</a>
+<!-- Hero -->
+<section class="hero">
+    <div class="container">
+        <h1>Efficient healthy tech<br>for CEA / healthcare automation</h1>
+        <p>a lightweight (better) alternative to classical industrial stacks, purpose-built for agri-and-care sectors</p>
+        <div>
+            <a href="#partnership" class="btn btn-primary">Contact Us</a>
+            <a href="#solutions" class="btn btn-outline">Explore Solutions</a>
+        </div>
+    </div>
+</section>
+
+<!-- Products -->
+<section id="products">
+    <div class="container">
+        <h2>Software & Hardware Products</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>🌐 Chain IIoT</h3>
+                <p>A cloud app skeleton served as a solid baseline upon which custom target systems can be built and extended.</p>
+                <p>Support multi-tenants, multiple user roles, multiple facility types; bundled with common business modules.</p>
+                <p>Suitable for large greenhouses park, scalable vertical farms, container farms, Automation-as-a-Service platforms, etc.</p>
+                <p>Source code under <em>BILATERAL-PARTNER-CODE-LICENSE</em></p>
+                <p><img src="chainsmart.png"></p>
+            </div>
+            <div class="card">
+                <h3>🧩 Chain Framework</h3>
+                <p>The cloud-edge application framework for building industrial IoT systems featured by business-driven distributed automation.</p>
+                <p>Chain IIoT is based on Chain Framework</p>
+                <p><img src="chainfx.png"></p>
+            </div>
+            <div class="card">
+                <h3>📟 Edge Automation Controllers</h3>
+                <p>Web-native, all-in-one, edge-level real-time control and local autonomy.</p>
+                <p>Soft automation engine that interprets cloud-defined schemas, orchestrates & controls the local device networks accordingly.</p>
+                <p>Hybrid of wired and wireless connectivity (Modbus RTU, LoRa Transparent), plug-and-play of multiple ports, enabling extensible, flexible and modular implementations and deployment.</p>
+                <p>Seamlessly integrates business logics with the automation fields.</p>
+                <p>Dummy operations to add / replace IoT devices.</p>
+                <p><img src="edge-controller.png"></p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Products -->
-    <section id="products">
-        <div class="container">
-            <h2>Software & Hardware Products</h2>
-            <div class="grid">
-                <div class="card">
-                    <h3>🌐 Chain IIoT</h3>
-                    <p>A cloud app skeleton served as a solid baseline upon which custom target systems can be built and extended.</p>
-                    <p>Support multi-tenants, multiple user roles, multiple facility types; bundled with common business modules.</p>
-                    <p>Suitable for large greenhouses park, scalable vertical farms, container farms, Automation-as-a-Service platforms, etc.</p>
-                    <p>Source code under <em>BILATERAL-PARTNER-CODE-LICENSE</em></p>
-                    <p><img src="chainsmart.png"></p>
-                </div>
-                <div class="card">
-                    <h3>🧩 Chain Framework</h3>
-                    <p>The cloud-edge application framework for building industrial IoT systems featured by business-driven distributed automation.</p>
-                    <p>Chain IIoT is based on Chain Framework</p>
-                    <p><img src="chainfx.png"></p>
-                </div>
-                <div class="card">
-                    <h3>📟 Edge Automation Controllers</h3>
-                    <p>Web-native, all-in-one, edge-level real-time control and local autonomy.</p>
-                    <p>Soft automation engine that interprets cloud-defined schemas, orchestrates & controls the local device networks accordingly.</p>
-                    <p>Hybrid of wired and wireless connectivity (Modbus RTU, LoRa Transparent), plug-and-play of multiple ports, enabling extensible, flexible and modular implementations and deployment.</p>
-                    <p>Seamlessly integrates business logics with the automation fields.</p>
-                    <p>Dummy operations to add / replace IoT devices.</p>
-                    <p><img src="edge-controller.png"></p>
-                </div>
+<!-- Solutions -->
+<section id="solutions">
+    <div class="container">
+        <h2>Where Skyiah Delivers Value</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>🌱 Controlled Environment Agriculture (CEA)</h3>
+                <p>Smart greenhouses, vertical farms, container farms, and hilly planting systems with real-time monitoring and automated control.</p>
+            </div>
+            <div class="card">
+                <h3>🏭 Manufacturing & Facility Automation</h3>
+                <p>Turnkey automation for production lines, processing facilities, and industrial IoT with predictive insights.</p>
+            </div>
+            <div class="card">
+                <h3>🛒 Modern Chain Commerce</h3>
+                <p>Digital marketplaces, unified order management, and seamless integration between physical facilities and online sales.</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Solutions -->
-    <section id="solutions">
-        <div class="container">
-            <h2>Where Skyiah Delivers Value</h2>
-            <div class="grid">
-                <div class="card">
-                    <h3>🌱 Controlled Environment Agriculture (CEA)</h3>
-                    <p>Smart greenhouses, vertical farms, container farms, and hilly planting systems with real-time monitoring and automated control.</p>
-                </div>
-                <div class="card">
-                    <h3>🏭 Manufacturing & Facility Automation</h3>
-                    <p>Turnkey automation for production lines, processing facilities, and industrial IoT with predictive insights.</p>
-                </div>
-                <div class="card">
-                    <h3>🛒 Modern Chain Commerce</h3>
-                    <p>Digital marketplaces, unified order management, and seamless integration between physical facilities and online sales.</p>
-                </div>
-            </div>
+<!-- About -->
+<section id="about" style="background:#f1f5f9;">
+    <div class="container">
+        <h2>About Skyiah</h2>
+        <p style="max-width:720px;margin:0 auto 3rem;text-align:center;font-size:1.15rem;color:#475569;">
+            We build complete intelligent systems that bridge the physical and digital worlds.
+            Our platform combines facility automation, IoT sensing, AI decision-making, and commerce
+            capabilities into one unified solution — designed for real-world operations in agriculture,
+            manufacturing, and service chains.
+        </p>
+        <div style="text-align:center;">
+            <strong>Seeking strategic partners and pilot projects worldwide.</strong>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- About -->
-    <section id="about" style="background:#f1f5f9;">
-        <div class="container">
-            <h2>About Skyiah</h2>
-            <p style="max-width:720px;margin:0 auto 3rem;text-align:center;font-size:1.15rem;color:#475569;">
-                We build complete intelligent systems that bridge the physical and digital worlds. 
-                Our platform combines facility automation, IoT sensing, AI decision-making, and commerce 
-                capabilities into one unified solution — designed for real-world operations in agriculture, 
-                manufacturing, and service chains.
-            </p>
-            <div style="text-align:center;">
-                <strong>Seeking strategic partners and pilot projects worldwide.</strong>
-            </div>
+<!-- Contact / CTA -->
+<section id="partnership">
+    <div class="container" style="text-align:center;">
+        <h2>Let's Build the Future Together</h2>
+        <p style="font-size:1.25rem;margin:1.5rem auto;max-width:600px;">
+            Skyiah collaborates with regional partners who operate cloud hosting within their geographic territories. Partners gain:
+
+            Territory‑specific hosting rights
+            Local data residency compliance
+            Operational independence
+            Business continuity guarantees
+            Exact‑design manufacturing rights (optional)
+            This model enables scalable deployment across global markets while maintaining deterministic architecture and operational clarity.
+        </p>
+        <p style="font-size:1.25rem;margin:1.5rem auto;max-width:600px;">
+            Whether you're a CEA operator, facility owner, agribusiness, or technology partner —
+            we want to hear from you.
+        </p>
+        <a href="mailto:it@skyiah.com" class="btn btn-primary" style="font-size:1.3rem;padding:18px 48px;">
+            Get in Touch
+        </a>
+        <p style="margin-top:2rem;color:#64748b;">
+            Email: <strong>contact@skyiah.com</strong><br>
+            We respond within 24 hours.
+        </p>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <p style="font-size:1.4rem;margin-bottom:1rem;color:white;">Skyiah LLC</p>
+        <div class="footer-links">
+            <a href="#">Solutions</a>
+            <a href="#">Technology</a>
+            <a href="#">Partners</a>
+            <a href="#">About</a>
         </div>
-    </section>
+        <div class="footer-links">
 
-    <!-- Contact / CTA -->
-    <section id="partnership">
-        <div class="container" style="text-align:center;">
-            <h2>Let's Build the Future Together</h2>
-            <p style="font-size:1.25rem;margin:1.5rem auto;max-width:600px;">
-                Skyiah collaborates with regional partners who operate cloud hosting within their geographic territories. Partners gain:
-
-                Territory‑specific hosting rights
-                Local data residency compliance
-                Operational independence
-                Business continuity guarantees
-                Exact‑design manufacturing rights (optional)
-                This model enables scalable deployment across global markets while maintaining deterministic architecture and operational clarity.
-            </p>
-            <p style="font-size:1.25rem;margin:1.5rem auto;max-width:600px;">
-                Whether you're a CEA operator, facility owner, agribusiness, or technology partner —
-                we want to hear from you.
-            </p>
-            <a href="mailto:it@skyiah.com" class="btn btn-primary" style="font-size:1.3rem;padding:18px 48px;">
-                Get in Touch
+            <a href="https://linkedin.com/company/skyiah-tech" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                </svg>
             </a>
-            <p style="margin-top:2rem;color:#64748b;">
-                Email: <strong>contact@skyiah.com</strong><br>
-                We respond within 24 hours.
-            </p>
+
+            <a href="mailto:contact@skyiah.com" aria-label="Email">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                </svg>
+            </a>
+
+            <a href="https://github.com/skyiah" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+                </svg>
+            </a>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p style="font-size:1.4rem;margin-bottom:1rem;color:white;">Skyiah LLC</p>
-            <div class="footer-links">
-                <a href="#">Solutions</a>
-                <a href="#">Technology</a>
-                <a href="#">Partners</a>
-                <a href="#">About</a>
-                
-                <a href="https://linkedin.com/company/skyiah-tech" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                    </svg>
-                </a>
-
-                <a href="mailto:contact@skyiah.com" aria-label="Email">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-                    </svg>
-                </a>
-
-                <a href="https://github.com/skyiah" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
-                    </svg>
-                </a>
-            </div>
-            <p style="margin-top:3rem;opacity:0.7;font-size:0.95rem;">
-                &copy; 2026 Skyiah LLC. Sheridan, WY, efficient and healthy tech for CEA & healthcare automation.
-            </p>
-        </div>
-    </footer>
+        <p style="margin-top:3rem;opacity:0.7;font-size:0.95rem;">
+            &copy; 2026 Skyiah LLC. Sheridan, WY, efficient and healthy tech for CEA & healthcare automation.
+        </p>
+    </div>
+</footer>
 
 </body>
 </html>
